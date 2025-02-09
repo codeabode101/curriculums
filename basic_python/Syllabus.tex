@@ -12,7 +12,7 @@
 \fancyfoot[LE,RO]{\thepage}
 \fancyfoot[RE,LO]{\copyright\hspace{0.25em}codeabode 2025. \href{https://codeabode.co}{\underline{codeabode.co}}}
 
-\title{\vspace{-3em}Python Syllabus\vspace{-3em}}
+\title{\vspace{-3em}Python Ping-Pong Syllabus\vspace{-3em}}
 
 \begin{document}
 \fontsize{14}{16}\selectfont
@@ -20,9 +20,9 @@
 \tableofcontents
 
 \section{Introduction}
-This course is derived from the \href{https://cs50.harvard.edu/python/2022/syllabus/}{\underline{The Harvard CS50 Syllabus}}. In addition to the skills learned in that course, our Python syllabus prioritizes Python expertise and serves as a precussor to \href{https://www.pygame.org/wiki/about}{Pygame Development}. \\
+This course is derived from the \href{https://cs50.harvard.edu/python/2022/syllabus/}{\underline{The Harvard CS50 Syllabus}} and study materials are derived from AP Computer Science A. In addition to the skills learned in that course, our Python syllabus prioritizes Python expertise for \href{https://www.pygame.org/wiki/about}{Pygame Development}. \\
 
-It is highly recommended that you review fractions \& with your kid as we move along the course.
+It is highly recommended that you review fractions with your kid as we move along the course.
 
 \section{Basic Variables and Print}
 The student will spend this first class understanding how to create strings and integers and print to the console. \\
@@ -46,15 +46,17 @@ No floats or booleans yet to avoid confusion. Keep it simple.
 
 \begin{itemize}
     \item \verb|if|, \verb|elif|, and \verb|else|
-    \item Booleans
     \item \verb|and|, \verb|or|, and \verb|not|
     \item \verb|<|, \verb|<=|, \verb|>|, \verb|>=|, \verb|==|, and \verb|!=|
 \end{itemize}
 
+At this point you can start debugging assignments for certain days and make them a little bit harder too.
+
 \section{Advanced Datatypes}
 
 \begin{itemize}
-    \item Floats  
+    \item Booleans (connect with if)
+    \item Floats (print output trimming)
     \item Lists
     \item Dictionaries (store advanced data)
 \end{itemize}
@@ -77,12 +79,30 @@ Potentially may return to teach the following concepts although not immediately 
     \item \verb|enumerate()| 
 \end{itemize}
 
+Also at this point you want to learn:
+
+\begin{itemize}
+    \item \verb|match|
+    \item Maybe: \verb|.sort()|
+\end{itemize}
+
 \section{Debugging}
-As loops can get buggy, it is important to start debugging now. \\
+As loops can get buggy, it is important to start debugging now.
 
 \begin{itemize}
     \item \verb|assert|
     \item \verb|print|
+    \item comments for advanced control flow
+    \item VSCode debugger
+\end{itemize} 
+
+Review the old concepts but up the difficulty of assignments. 
+
+% Add to "Debugging"
+\subsection{Unit Testing for Games}
+\begin{itemize}
+    \item Write tests for game mechanics (e.g., \verb|assert player.jump() == True|)
+    \item Use \verb|pytest| for automated checks
 \end{itemize}
 
 \section{Functions}
@@ -92,6 +112,7 @@ As loops can get buggy, it is important to start debugging now. \\
     \item \verb|return|
     \item Return Types
     \item Call Stack Basics
+    \item Global variables
 \end{itemize}
 
 \section{Classes}
@@ -112,16 +133,57 @@ As loops can get buggy, it is important to start debugging now. \\
     \item \verb|random|
     \item \verb|time.sleep()|
 \end{itemize}
+% Add to "Libraries" section
+\subsection{CSV and Data Files}
+\begin{itemize}
+    \item Save player stats with \verb|csv.writer()|
+    \item Load high scores with \verb|csv.reader()|
+\end{itemize}
 
-Additional libraries like\verb|math| may be taught, but aren't necessary for PyGame.
-
-\section{Additional Concepts}
-% TODO: lambda? yield?
-
-\subsection{Exception}
+\section{Exception}
 
 \begin{itemize}
     \item \verb|try|, \verb|except|, and \verb|raise|
 \end{itemize}
 
+\section{File I/O}
+
+\begin{itemize}
+    \item \verb|open()|
+    \item \verb|read()|
+    \item \verb|write()|
+    \item \verb|close()|
+\end{itemize}
+
+At this point, we will start the flagship "code that writes code" assignment.
+
+\section{sys Module}
+
+Introduction to Linux and basic concepts.
+
+\begin{itemize}
+    \item \verb|sys.exit()|
+    \item \verb|sys.argv|
+    \item How to run other Python files
+\end{itemize}
+
+Additional libraries like\verb|math| may be taught, but aren't necessary for PyGame.
+
+\section{Intro to Pygame}
+???
+
+\subsection{Weather App with Pygame}
+\begin{itemize}
+    \item HTTP requests
+    \item JSON handling
+    \item Rendering
+\end{itemize}
+
+% New section
+\section{Advanced Pygame Techniques}
+\begin{itemize}
+    \item Sprite animation with \verb|pygame.image.load()|
+    \item Collision detection using rectangles
+    \item Playing sound effects and music
+\end{itemize}
 \end{document}
