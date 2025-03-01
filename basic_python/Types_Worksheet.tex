@@ -1,0 +1,565 @@
+\documentclass{article}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{geometry}
+\usepackage{listings}
+\usepackage{multicol}
+\usepackage{hyperref}
+
+\geometry{letterpaper, left=1cm, right=1cm, top=2cm, bottom=2cm}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[LE,RO]{\thepage}
+\fancyfoot[RE,LO]{\copyright\hspace{0.25em}codeabode 2025. \href{https://codeabode.co}{\underline{codeabode.co}}}
+
+\setlength{\columnsep}{0.5cm}
+
+\title{\vspace{-3em}Types Worksheet\vspace{-2em}}
+
+\begin{document}
+
+\maketitle
+
+\begin{multicols*}{4}
+    \raggedright
+    \begin{enumerate}
+        \item \noindent What type is \textbf{True}? 
+
+        \begin{enumerate}[label=(\Alph*)]
+            \item Boolean
+            \item Integer
+            \item String
+            \item Float
+        \end{enumerate}
+
+        \item \noindent What is \textbf{type("False")}?
+
+        \begin{enumerate}[label=(\Alph*)]
+            \item bool 
+            \item int 
+            \item str 
+            \item float 
+        \end{enumerate}
+
+        \item What type is \textbf{"3.14"}?
+        \begin{enumerate}[label=(\Alph*)]
+            \item Float
+            \item Integer
+            \item String
+            \item Boolean
+        \end{enumerate}
+
+        \item What does \textbf{"5" + "2"} produce?
+        \begin{enumerate}[label=(\Alph*)]
+            \item 7
+            \item "52"
+            \item Error
+            \item 10
+        \end{enumerate}
+
+        \item What is \textbf{bool("0")}?
+        \begin{enumerate}[label=(\Alph*)]
+            \item False
+            \item True
+            \item 0
+            \item Error
+        \end{enumerate}
+
+        \item What type is \textbf{str(True)}?
+        \begin{enumerate}[label=(\Alph*)]
+            \item Boolean
+            \item Integer
+            \item String
+            \item Float
+        \end{enumerate} 
+
+        \item What does \textbf{input()} return if you type \textit{Hello}?
+        \begin{enumerate}[label=(\Alph*)]
+            \item String
+            \item Error
+            \item Boolean
+            \item Integer
+        \end{enumerate}
+
+        \item What is \textbf{"123" == 123}?
+        \begin{enumerate}[label=(\Alph*)]
+            \item True
+            \item False
+            \item Error
+            \item Maybe
+        \end{enumerate}
+
+        \item What does \textbf{bool("False")} return?
+        \begin{enumerate}[label=(\Alph*)]
+            \item False
+            \item True
+            \item "False"
+            \item Error
+        \end{enumerate}
+
+        \item What is \textbf{type("42" * 2)}?
+        \begin{enumerate}[label=(\Alph*)]
+            \item Integer
+            \item String
+            \item Error
+            \item List
+        \end{enumerate}
+
+        \item What does \textbf{"100" + 25} produce?
+        \begin{enumerate}[label=(\Alph*)]
+            \item 125
+            \item "10025"
+            \item Error
+            \item "125"
+        \end{enumerate}
+
+        \item What is \textbf{bool("")}?
+        \begin{enumerate}[label=(\Alph*)]
+            \item True
+            \item False
+            \item ""
+            \item Error
+        \end{enumerate}
+
+
+        \item What does \textbf{"5" + 3} produce?
+        \begin{enumerate}[label=(\Alph*)]
+            \item 8
+            \item "53"
+            \item \textbf{TypeError}
+            \item "8"
+        \end{enumerate}
+
+        \item What is \textbf{"10" - 5}?
+        \begin{enumerate}[label=(\Alph*)]
+            \item 5
+            \item "5"
+            \item \textbf{TypeError}
+            \item "10-5"
+        \end{enumerate}
+
+        \item What is \textbf{"7" * 2}?
+        \begin{enumerate}[label=(\Alph*)]
+            \item "77"
+            \item 14
+            \item \textbf{TypeError}
+            \item "7272"
+        \end{enumerate}
+
+        \item What does \textbf{15 / "3"} produce?
+        \begin{enumerate}[label=(\Alph*)]
+            \item 5.0
+            \item "5"
+            \item \textbf{TypeError}
+            \item 5
+        \end{enumerate}
+
+        \item Why does \textbf{print("Hi" + 5)} crash?
+        \begin{enumerate}[label=(\Alph*)]
+            \item Missing quotes
+            \item \textbf{TypeError (str + int)}
+            \item SyntaxError
+            \item "Hi5"
+        \end{enumerate}
+
+
+        \item What is \textbf{"5" + str(2)}?
+        \begin{enumerate}[label=(\Alph*)]
+            \item 7
+            \item \textbf{"52"}
+            \item TypeError
+            \item "25"
+        \end{enumerate}
+
+        \item What does \textbf{"12.5" * 2} produce?
+        \begin{enumerate}[label=(\Alph*)]
+            \item 25.0
+            \item "25"
+            \item \textbf{"12.512.5"}
+            \item SyntaxError
+        \end{enumerate}
+
+        \item What error does \textbf{print("100" - 50)} raise?
+        \begin{enumerate}[label=(\Alph*)]
+            \item SyntaxError
+            \item \textbf{TypeError}
+            \item ValueError
+            \item "50"
+        \end{enumerate}
+
+        \item What is \textbf{"Hello" * "2"}?
+        \begin{enumerate}[label=(\Alph*)]
+            \item "HelloHello"
+            \item 2
+            \item \textbf{TypeError}
+            \item "Hello2"
+        \end{enumerate}
+
+        \item Why does \textbf{3 + "apples"} crash?
+        \begin{enumerate}[label=(\Alph*)]
+            \item Missing quotes
+            \item \textbf{TypeError (int + str)}
+            \item Division by zero
+            \item "3apples"
+        \end{enumerate}
+
+        \item What is \textbf{len(42)}?
+        \begin{enumerate}[label=(\Alph*)]
+            \item 2
+            \item \textbf{TypeError}
+            \item 42
+            \item "42"
+        \end{enumerate}
+
+        \item What does \textbf{"10" / 2} produce?
+        \begin{enumerate}[label=(\Alph*)]
+            \item 5.0
+            \item "5"
+            \item \textbf{TypeError}
+            \item "10/2"
+        \end{enumerate}
+
+        \item What is wrong with \textbf{if True print("Yes")}?
+        \begin{enumerate}[label=(\Alph*)]
+            \item Missing quotes
+            \item \textbf{Missing colon (:) after True}
+            \item Wrong indentation
+            \item Nothing
+        \end{enumerate}
+
+        \item What is \textbf{int("ten")}?
+        \begin{enumerate}[label=(\Alph*)]
+            \item 10
+            \item "10"
+            \item \textbf{ValueError}
+            \item TypeError
+        \end{enumerate}
+
+        \item What does \textbf{True + 5} evaluate to?
+        \begin{enumerate}[label=(\Alph*)]
+            \item 6
+            \item \textbf{TypeError}
+            \item True5
+            \item 5
+        \end{enumerate}
+
+        \item Why does \textbf{input("Number: ") * 2} fail if you type 5?
+        \begin{enumerate}[label=(\Alph*)]
+            \item Needs \textbf{int()}
+            \item \textbf{TypeError}
+            \item SyntaxError
+            \item It works
+        \end{enumerate}
+        \item What does \textbf{print(3 + "3")} produce?
+        \begin{enumerate}[label=(\Alph*)]
+            \item 6
+            \item "33"
+            \item \textbf{TypeError}
+            \item 33
+        \end{enumerate}
+
+        \item What is \textbf{True + False}?
+        \begin{enumerate}[label=(\Alph*)]
+            \item True
+            \item \textbf{1}
+            \item Error
+            \item False
+        \end{enumerate}
+
+        \item What does \textbf{print("10" * 2)} output?
+        \begin{enumerate}[label=(\Alph*)]
+            \item 20
+            \item \textbf{"1010"}
+            \item "20"
+            \item TypeError
+        \end{enumerate}
+
+        \item What is \textbf{bool(" ")}? (space inside quotes)
+        \begin{enumerate}[label=(\Alph*)]
+            \item False
+            \item \textbf{True}
+            \item Error
+            \item " "
+        \end{enumerate}
+
+        \item What does \textbf{print("5" + 2 * "2")} show?
+        \begin{enumerate}[label=(\Alph*)]
+            \item "522"
+            \item \textbf{"5222"}
+            \item 54
+            \item TypeError
+        \end{enumerate}
+
+        \item What is \textbf{7 + input()} if you type 3?
+        \begin{enumerate}[label=(\Alph*)]
+            \item 10
+            \item "73"
+            \item \textbf{TypeError}
+            \item "10"
+        \end{enumerate}
+
+        \item What is \textbf{not 0}?
+        \begin{enumerate}[label=(\Alph*)]
+            \item 1
+            \item \textbf{True}
+            \item False
+            \item Error
+        \end{enumerate}
+
+        \item What does \textbf{print("apple" \textgreater "banana")} output?
+        \begin{enumerate}[label=(\Alph*)]
+            \item True
+            \item \textbf{False}
+            \item Error
+            \item Maybe
+        \end{enumerate}
+
+        \item What is \textbf{len("2" * 3)}?
+        \begin{enumerate}[label=(\Alph*)]
+            \item 6
+            \item \textbf{3}
+            \item "222"
+            \item TypeError
+        \end{enumerate}
+        \item What happens with \textbf{"5" + 3}?
+        \begin{enumerate}[label=(\Alph*)]
+            \item Concatenates
+            \item Adds numerically
+            \item Creates a list
+            \item Prints "53"
+        \end{enumerate}
+
+        \item What does \textbf{print(10 - "5")} do?
+        \begin{enumerate}[label=(\Alph*)]
+            \item Subtracts 5
+            \item Returns "5"
+            \item Converts to float
+            \item Crashes silently
+        \end{enumerate}
+
+        \item What is \textbf{"3.14" * 2}?
+        \begin{enumerate}[label=(\Alph*)]
+            \item 6.28
+            \item "6.28"
+            \item "3.143.14"
+            \item TypeError
+        \end{enumerate}
+
+        \item Why does \textbf{len(42)} fail?
+        \begin{enumerate}[label=(\Alph*)]
+            \item Needs quotes
+            \item 42 is too big
+            \item Integers have no length
+            \item Syntax error
+        \end{enumerate}
+
+        \item What does \textbf{input() + 5} do if you type "5"?
+        \begin{enumerate}[label=(\Alph*)]
+            \item Returns 10
+            \item Returns "55"
+            \item Converts to integer
+            \item Destroys the universe
+        \end{enumerate}
+
+        \item What is \textbf{True + "1"}?
+        \begin{enumerate}[label=(\Alph*)]
+            \item 2
+            \item "True1"
+            \item Converts to string
+            \item Explodes
+        \end{enumerate}
+
+        \item What does \textbf{print("Hello" - "o")} output?
+        \begin{enumerate}[label=(\Alph*)]
+            \item "Hell"
+            \item SyntaxError
+            \item TypeError
+            \item -1
+        \end{enumerate}
+
+        \item What is \textbf{not "False"}?
+        \begin{enumerate}[label=(\Alph*)]
+            \item True
+            \item False
+            \item "True"
+            \item SyntaxError
+        \end{enumerate}
+
+        \item What is \textbf{"10" / 2}?
+        \begin{enumerate}[label=(\Alph*)]
+            \item 5.0
+            \item "5"
+            \item Divides characters
+            \item Converts to float
+        \end{enumerate}
+
+        \item What does \textbf{if 3 \textgreater "3": print("Yes")} do?
+        \begin{enumerate}[label=(\Alph*)]
+            \item Prints "Yes"
+            \item Converts to int
+            \item SyntaxError
+            \item TypeError
+        \end{enumerate}
+
+        \item What is \textbf{bool(print("Hi"))}?
+        \begin{enumerate}[label=(\Alph*)]
+            \item True
+            \item False
+            \item "Hi"
+            \item None
+        \end{enumerate}
+
+        \item What is \textbf{"7" ** 2}?
+        \begin{enumerate}[label=(\Alph*)]
+            \item 49
+            \item "49"
+            \item Repeats string
+            \item SyntaxError
+        \end{enumerate}
+
+        \item Why does \textbf{for i in 5: pass} crash?
+        \begin{enumerate}[label=(\Alph*)]
+            \item Missing range()
+            \item 5 is not iterable
+            \item Needs quotes
+            \item Indentation error
+        \end{enumerate}
+
+        \item What is \textbf{"9" + 9}?
+        \begin{enumerate}[label=(\Alph*)]
+            \item 18
+            \item "99"
+            \item Converts to float
+            \item TypeError
+        \end{enumerate}
+
+        \item What does \textbf{"5" == 5} evaluate to?
+        \begin{enumerate}[label=(\Alph*)]
+            \item True
+            \item False
+            \item Converts types
+            \item SyntaxError
+        \end{enumerate}
+    \end{enumerate}
+
+\end{multicols*}
+
+    \begin{enumerate}
+        \item What is wrong with this code?
+        \begin{lstlisting}
+        b = 4
+        a = b + c
+        print(a)
+        \end{lstlisting}
+        \begin{enumerate}[label=(\Alph*)]
+            \item Missing variable
+            \item \textbf{Missing colon (:) after range(5)}
+            \item Wrong indentation
+            \item Nothing
+        \end{enumerate}
+
+        \item The code crashes with:  
+        \textbf{TypeError: must be str, not int}  
+        Which line causes this error?  
+        \begin{lstlisting}
+        name = "Alex"
+        age = 10
+        print("Hello " + name + ", you are " + age)
+        \end{lstlisting}
+
+        \begin{enumerate}[label=(\Alph*)]
+            \item Line 1 (\texttt{name = "Alex"})
+            \item \textbf{Line 3 (can't add `str` and `int`)}
+            \item Line 2 (\texttt{age = 10})
+            \item SyntaxError in print()
+        \end{enumerate}
+
+        \item What happens when running this code?
+        \begin{lstlisting}
+        print = 4
+        print("Hello")
+        \end{lstlisting}
+        \begin{enumerate}[label=(\Alph*)]
+            \item Prints "Hello"
+            \item Assigns 4 to `print`
+            \item Converts 4 to a string
+            \item Creates a syntax error
+        \end{enumerate}
+
+        \item Why does this code crash?
+        \begin{lstlisting}
+        str = "5"
+        x = int(str)
+        print(x + 1)
+        \end{lstlisting}
+        \begin{enumerate}[label=(\Alph*)]
+            \item `str` is a string
+            \item Missing parentheses
+            \item Can't add `x` and 1
+            \item `int()` needs quotes
+        \end{enumerate}
+
+        \item What is wrong with this code?
+        \begin{lstlisting}
+        (print) ("Hello")
+        \end{lstlisting}
+        \begin{enumerate}[label=(\Alph*)]
+            \item Extra parentheses
+            \item Space between `print` and `(`
+            \item Missing colon
+            \item Nothing
+        \end{enumerate}
+
+        \item What does this code output?
+        \begin{lstlisting}
+        input = 5
+        print(input("Enter a number: "))
+        \end{lstlisting}
+        \begin{enumerate}[label=(\Alph*)]
+            \item 5
+            \item Asks for user input
+            \item Extra parenthesis
+            \item `input` is not a function
+        \end{enumerate}
+
+        \item What error does this code raise?
+        \begin{lstlisting}
+        a = 5 + (3 * 2)
+        b = (5 + 3 * 2
+        print(a + b)
+        \end{lstlisting}
+        \begin{enumerate}[label=(\Alph*)]
+            \item Missing `)` on line 2
+            \item `a` is undefined
+            \item `*` operator error
+            \item `print` syntax error
+        \end{enumerate}
+
+        \item What happens here?
+        \begin{lstlisting}
+        def print(x):
+            return x + 1
+        print(print(5))
+        \end{lstlisting}
+        \begin{enumerate}[label=(\Alph*)]
+            \item Prints 6
+            \item Recursion error
+            \item Overrides `print()`
+            \item Returns 6
+        \end{enumerate}
+
+        \item Why does this code fail?
+        \begin{lstlisting}
+        int = "10"
+        age = int(5.5)
+        \end{lstlisting}
+        \begin{enumerate}[label=(\Alph*)]
+            \item `int` is a string
+            \item `5.5` is a float
+            \item Missing quotes
+            \item `age` is undefined
+        \end{enumerate}
+    \end{enumerate}
+\end{document}
