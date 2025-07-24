@@ -1,0 +1,257 @@
+\documentclass{article}
+\usepackage{fancyhdr}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage[most]{tcolorbox}
+
+\geometry{a4paper, left=1.5cm, right=1.5cm, top=1.5cm, bottom=1.5cm}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[LE,RO]{\thepage}
+\fancyfoot[RE,LO]{\copyright\hspace{0.25em}codeabode 2025. \href{https://codeabode.co}{\underline{codeabode.co}}}
+
+\title{\vspace{-2em}AI Deep Dive Pathway for Vihaan\vspace{-2em}}
+\author{}
+\date{}
+
+\newtcolorbox{learningblock}{colback=blue!5!white, colframe=blue!75!black, 
+fonttitle=\bfseries, title=Learning Pathway, arc=3mm, boxsep=2mm}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\lstset{
+    basicstyle=\ttfamily\footnotesize,
+    breaklines=true,
+    frame=single,
+    commentstyle=\color{codegreen},
+    numbers=left,
+    numberstyle=\tiny\color{gray}
+}
+
+\begin{document}
+\fontsize{13}{15}\selectfont
+\maketitle
+
+\section{Personalized Learning Approach}
+This course is designed to teach Vihaan AI skills he will be able to use in whatever domain interests him. Since he has already completed the demo session, he will not require another initial skills assessment. 
+
+\begin{itemize}[leftmargin=*, noitemsep]
+    \item Build on existing game development knowledge.
+    \item Use project-based learning with immediate visual feedback.
+    \item Have no theoretical lectures. Everything will be hands on and he will be able to immediately see what he's building so that he remains interested.
+    \item Develop troubleshooting skills through guided problem-solving.
+\end{itemize}
+
+\section{Course Structure \& Methodology}
+\begin{learningblock}
+\textbf{Weekly Sessions:} 
+\begin{itemize}[noitemsep]
+\item 60 minute hands-on coding sessions 
+\item Flexible scheduling, at least once a week \textbf{recommended}
+\item Focused on an optimal balance between the student's questions and the direction of this syllabus
+\end{itemize}
+
+\textbf{Homework Philosophy:}
+\begin{itemize}[noitemsep]
+\item Purpose-driven mini-projects (not exercises)
+\item Designed to reinforce concepts over short challenges on throughout the week
+\item Optional extension challenges for deeper exploration
+\item \textbf{15-minute complementary} midweek homework review session
+\end{itemize}
+
+\textbf{Mathematical/Theoretical Foundation:}
+\begin{itemize}[noitemsep]
+\item Contextual introduction to vectors/matrices through game physics
+\item Exponents/logarithms in probability systems
+\item Just-in-time learning of required concepts. No boring lectures!
+\end{itemize}
+\end{learningblock}
+
+\section{Core AI Concepts}
+
+\subsection{Neural Network Fundamentals}
+\begin{itemize}
+\item \textbf{Convolutional Neural Networks (CNNs):}
+    \begin{itemize}
+    \item Filters and feature extraction
+    \item Pooling operations
+    \item Architecture patterns (LeNet, ResNet)
+    \item Image recognition applications
+    \end{itemize}
+    
+\item \textbf{Project:} Image classifier for game assets
+\end{itemize}
+
+\subsection{Mathematical Foundation}
+\begin{itemize}
+\item \textbf{Vectors \& Matrices:}
+    \begin{itemize}
+    \item Operations: dot product, cross product
+    \item Geometric interpretations
+    \item Matrix transformations
+    \end{itemize}
+    
+\item \textbf{Tensors:} Higher-dimensional data representation
+\item \textbf{Project:} Implement vector operations from scratch
+\end{itemize}
+
+\subsection{Transformer Architectures}
+\begin{itemize}
+\item \textbf{Attention Mechanism:}
+    \begin{itemize}
+    \item Scaled dot-product attention
+    \item Multi-head attention
+    \item Positional encoding
+    \end{itemize}
+    
+\item \textbf{GPT Architecture:}
+    \begin{itemize}
+    \item Decoder-only structure
+    \item Layer normalization
+    \item Feed-forward networks
+    \end{itemize}
+    
+\item \textbf{Project:} Visualize attention patterns
+\end{itemize}
+
+\subsection{Build Your Own Model}
+\begin{itemize}
+\item \textbf{From Scratch:}
+    \begin{itemize}
+    \item Embedding layers
+    \item Self-attention implementation
+    \item Position-wise FFNs
+    \end{itemize}
+    
+\item \textbf{Using PyTorch:}
+\begin{lstlisting}[language=Python]
+class MiniGPT(nn.Module):
+    def __init__(self, vocab_size, d_model):
+        super().__init__()
+        self.embed = nn.Embedding(vocab_size, d_model)
+        self.blocks = nn.ModuleList([
+            TransformerBlock(d_model) for _ in range(4)
+        ])
+        self.ln_f = nn.LayerNorm(d_model)
+        self.head = nn.Linear(d_model, vocab_size)
+\end{lstlisting}
+
+\item \textbf{Project:} Character-level language model
+\end{itemize}
+
+\subsection{Prompt Engineering}
+\begin{itemize}
+\item \textbf{Key Parameters:}
+    \begin{itemize}
+    \item Temperature: Controlling randomness
+    \item Top-p/top-k sampling
+    \item Frequency/presence penalties
+    \end{itemize}
+    
+\item \textbf{Advanced Techniques:}
+    \begin{itemize}
+    \item Chain-of-thought prompting
+    \item Few-shot learning
+    \item Template engineering
+    \end{itemize}
+    
+\item \textbf{Project:} Build a prompt optimizer
+\end{itemize}
+
+\subsection{Vector Databases}
+\begin{itemize}
+\item \textbf{Core Concepts:}
+    \begin{itemize}
+    \item Embedding vectors
+    \item Similarity metrics (cosine, Euclidean)
+    \item Approximate nearest neighbors (ANN)
+    \end{itemize}
+    
+\item \textbf{Applications:}
+    \begin{itemize}
+    \item Long-term memory for AI agents
+    \item Semantic search
+    \item Contextual retrieval
+    \end{itemize}
+    
+\item \textbf{Project:} Knowledge retrieval system
+\end{itemize}
+
+\subsection{Fine-Tuning \& Baseline Models}
+\begin{itemize}
+\item \textbf{Why Baseline Models:}
+    \begin{itemize}
+    \item Computational efficiency
+    \item Domain specialization
+    \item Privacy/security control
+    \end{itemize}
+    
+\item \textbf{Methods:}
+    \begin{itemize}
+    \item Full fine-tuning
+    \item Parameter-efficient tuning (LoRA, prefix-tuning)
+    \item RLHF (Reinforcement Learning from Human Feedback)
+    \end{itemize}
+    
+\item \textbf{Project:} Fine-tune model on custom dataset
+\end{itemize}
+
+\subsection{AI Agents}
+\begin{itemize}
+\item \textbf{Architecture:}
+    \begin{itemize}
+    \item Perception modules
+    \item Memory systems
+    \item Action planning
+    \item Self-reflection
+    \end{itemize}
+    
+\item \textbf{Implementation:}
+    \begin{itemize}
+    \item ReAct framework
+    \item Tool usage
+    \item Multi-agent systems
+    \end{itemize}
+    
+\item \textbf{Final Project:} Game-playing AI agent
+\end{itemize}
+
+\section{Learning Resources}
+\begin{itemize}
+\item \textbf{Math:} 3Blue1Brown Linear Algebra series
+\item \textbf{Neural Networks:} Karpathy's NN Zero to Hero
+\item \textbf{Transformers:} The Annotated Transformer
+\item \textbf{Vector DBs:} Pinecone documentation
+\item \textbf{Fine-Tuning:} Hugging Face PEFT examples
+\end{itemize}
+
+\section{Progression Logic}
+\begin{center}
+\begin{tabular}{|c|c|}
+\hline
+\textbf{Concept} & \textbf{Why Next?} \\
+\hline
+CNNs & Visual pattern recognition foundation \\
+\hline
+Vector Math & Language is geometric space \\
+\hline
+Transformers & Attention as information routing \\
+\hline
+Build Your Own & Understand model internals \\
+\hline
+Prompt Engineering & Practical interface to models \\
+\hline
+Vector DBs & External memory for models \\
+\hline
+Fine-Tuning & Customize model behavior \\
+\hline
+Agents & Autonomous AI systems \\
+\hline
+\end{tabular}
+\end{center}
+
+\end{document}

@@ -1,0 +1,196 @@
+\documentclass{article}
+\usepackage{fancyhdr}
+\usepackage{listings}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{amsmath}
+\usepackage[most]{tcolorbox}
+
+\geometry{letterpaper, left=2cm, right=2cm, top=2cm, bottom=2cm}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[LE,RO]{\thepage}
+\fancyfoot[RE,LO]{\copyright\hspace{0.25em}codeabode 2025. \href{https://codeabode.co}{\underline{codeabode.co}}}
+
+\title{\vspace{-3em}AI through Game Development Pathway for Vihaan\vspace{-3em}}
+\author{}
+
+\newtcolorbox{learningblock}{colback=blue!5!white, colframe=blue!75!black, 
+fonttitle=\bfseries, title=Learning Pathway, arc=3mm, boxsep=2mm}
+
+\begin{document}
+\fontsize{14}{16}\selectfont
+\maketitle
+
+\section{Personalized Learning Approach}
+This course is designed specifically for Vihaan, building on his experimentation with game development to explore artificial intelligence. Recognizing his preference for hands-on learning over virtual instruction, we'll:
+
+\begin{itemize}[leftmargin=*, noitemsep]
+    \item Build on existing game development knowledge.
+    \item Use project-based learning with immediate visual feedback.
+    \item Have no theoretical lectures. Everything will be hands on and he will be able to immediately see what he's building so that he remains interested.
+    \item Develop troubleshooting skills through guided problem-solving.
+\end{itemize}
+
+\section{Course Structure \& Methodology}
+\begin{learningblock}
+\textbf{Weekly Sessions:} 
+\begin{itemize}[noitemsep]
+\item 60 minute hands-on coding sessions 
+\item Flexible scheduling, at least once a week \textbf{recommended}
+\item Focused on an optimal balance between the student's questions and the direction of this syllabus
+\end{itemize}
+
+\textbf{Homework Philosophy:}
+\begin{itemize}[noitemsep]
+\item Purpose-driven mini-projects (not exercises)
+\item Designed to reinforce concepts over short challenges on throughout the week
+\item Optional extension challenges for deeper exploration
+\item \textbf{15-minute complementary} midweek homework review session
+\end{itemize}
+
+\textbf{Mathematical/Theoretical Foundation:}
+\begin{itemize}[noitemsep]
+\item Contextual introduction to vectors/matrices through game physics
+\item Exponents/logarithms in probability systems
+\item Just-in-time learning of required concepts. No boring lectures!
+\end{itemize}
+\end{learningblock}
+
+\section{Initial Skills Assessment}
+On the first session, Vihaan will create a simple game prototype to demonstrate his current approach to problem-solving and technical implementation:
+
+\begin{center}
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Game Choice} & \textbf{Learning Focus Areas} \\
+\hline
+Ping-Pong & Physics, collision detection, input handling \\
+\hline
+Space Invaders & State management, AI patterns, scoring \\
+\hline
+Dinosaur Runner & Procedural generation, timing systems \\
+\hline
+Student's Choice & Self-directed design, scope management \\
+\hline
+\end{tabular}
+\end{center}
+
+\subsection*{Evaluation Criteria}
+We'll focus on Vihaan's:
+\begin{itemize}
+\item \textbf{Problem-solving workflow}: How he approaches challenges
+\item \textbf{Resource utilization}: Documentation/Google/LLM usage
+\item \textbf{Debugging methodology}: Response to errors like \texttt{AttributeError}
+\item \textbf{Creative implementation}: Unique solutions to game mechanics
+\end{itemize}
+
+Neither does the game nor the exact mechanics matter that much. His methodology while building this simple game will be enough to determine where he stands and what sections are more or less relevant to him.
+
+\section{Python Foundations}
+\begin{itemize}[nosep]
+    \item \textbf{Covered in:} \href{https://codeabode.co/Syllabus.pdf}{First half of Core Syllabus} (Variables, Control Flow, Functions, etc.)
+    \item \textbf{AI Connection:} Basic decision-making as primitive AI
+    \item \textbf{Project:} Text-based adventure with simple NPC responses
+    \item \textbf{Pace:} Student determines speed based on prior knowledge
+\end{itemize}
+
+\section{Game Mechanics \& Basic AI}
+\begin{itemize}[nosep]
+    \item Pygame basics: Sprites, collision, animation
+    \item \textbf{AI Integration:} State machines for enemy behavior
+    \item \textbf{Project:} Maze runner with pathfinding enemies
+    \item \textbf{When ready:} Student moves on after completing core game loop
+\end{itemize}
+
+\section{Data Handling \& Prompt Engineering}
+\begin{itemize}[nosep]
+    \item \textbf{AI Integration Point 1:} Gemini API
+    \begin{itemize}
+        \item Dynamic dialogue generation for NPCs
+        \item Prompt engineering fundamentals
+        \item Basic response evaluation
+    \end{itemize}
+    \item \textbf{Project:} RPG with AI-generated quests
+    \item \textbf{Trigger:} When game needs complex interactions
+\end{itemize}
+
+\section{Vector Databases \& Memory Systems}
+\begin{itemize}[nosep]
+    \item \textbf{AI Integration Point 2:} Vector databases
+    \begin{itemize}
+        \item Implementing NPC memory systems
+        \item Semantic search for game content
+        \item Knowledge retrieval applications
+    \end{itemize}
+    \item \textbf{Project:} Detective game with AI assistant
+    \item \textbf{Trigger:} When game needs persistent knowledge
+\end{itemize}
+
+\section{Neural Networks \& Learning Agents}
+\begin{itemize}[nosep]
+    \item \textbf{AI Integration Point 3:} PyTorch fundamentals
+    \begin{itemize}
+        \item Neural networks for behavior prediction
+        \item Reinforcement learning concepts
+        \item Adaptive difficulty systems
+    \end{itemize}
+    \item \textbf{Project:} Strategy game with learning opponents
+    \item \textbf{Trigger:} After implementing basic game AI
+\end{itemize}
+
+\section{Advanced AI Systems}
+\begin{itemize}[nosep]
+    \item \textbf{AI Integration Point 4:} Fine-tuning \& RLAIF
+    \begin{itemize}
+        \item Customizing AI for specific game genres
+        \item Reward modeling and evaluation
+        \item Procedural content generation
+    \end{itemize}
+    \item \textbf{Capstone:} Student-designed AI game
+    \item \textbf{Trigger:} For final project development
+\end{itemize}
+
+\section{AI Integration Framework}
+
+\begin{learningblock}
+\textbf{Self-Paced Progression:}
+\begin{itemize}[nosep]
+    \item Student controls learning speed and project choices
+    \item AI concepts introduced when relevant to current project
+    \item Milestone-based rather than time-based advancement
+\end{itemize}
+
+\textbf{Foundation Reference:}
+\begin{itemize}[nosep]
+    \item Python basics covered in \href{https://codeabode.co/Syllabus.pdf}{Core Syllabus (First Half)}
+    \item Student reviews relevant sections as needed
+    \item Focus sessions on gaps identified during projects
+\end{itemize}
+
+\textbf{AI Implementation Pathway:}
+\begin{center}
+\small
+\begin{tabular}{p{3.5cm} p{3cm} p{6cm}}
+\textbf{AI Concept} & \textbf{Integration Point} & \textbf{Game Application} \\
+\hline
+Gemini API & First complex NPC interactions & Dynamic dialogue, quest generation \\
+\hline
+Prompt Engineering & When responses need refinement & Character personality consistency \\
+\hline
+Vector Databases & Persistent knowledge required & NPC memory, player behavior recall \\
+\hline
+PyTorch Models & Basic AI implemented & Adaptive enemies, behavior prediction \\
+\hline
+Fine-Tuning & Specialized game needs & Genre-specific AI customization \\
+\end{tabular}
+\end{center}
+\end{learningblock}
+
+\section{Improvement}
+If this curriculum deviates too much from your expectations or is insufficient in any other way, let me know and changes will be made. 
+
+\end{document}

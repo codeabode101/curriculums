@@ -1,0 +1,338 @@
+\documentclass{article}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{geometry}
+\usepackage{listings}
+\usepackage{multicol}
+\usepackage{hyperref}
+\usepackage{tasks}
+
+\geometry{letterpaper, left=1cm, right=1cm, top=2cm, bottom=2cm}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[LE,RO]{\thepage}
+\fancyfoot[RE,LO]{\copyright\hspace{0.25em}codeabode 2025. \href{https://codeabode.co}{\underline{codeabode.co}}}
+
+\setlength{\columnsep}{0.5cm}
+
+\title{\vspace{-3em}Types Worksheet\vspace{-2em}}
+
+\begin{document}
+
+\maketitle
+
+
+    \begin{enumerate}
+        \item What does this code output?
+        \begin{lstlisting}
+i = 1  
+while i <= 5:  
+    print(str(i) * i)  
+    i += 1  
+        \end{lstlisting}
+        \rule{\linewidth}{0.4pt} % Full-width bar
+        \rule{\linewidth}{0.4pt} % Full-width bar
+        \rule{\linewidth}{0.4pt} % Full-width bar
+        \rule{\linewidth}{0.4pt} % Full-width bar
+        \rule{\linewidth}{0.4pt} % Full-width bar
+        \rule{\linewidth}{0.4pt} % Full-width bar
+        \rule{\linewidth}{0.4pt} % Full-width bar
+
+        \item What does this code output?
+        \begin{lstlisting}
+k = 0  
+while k < 20:  
+    if k % 3 == 1:  
+        print(k, end=' ')  
+    k += 2  
+        \end{lstlisting}
+
+        \rule{\linewidth}{0.4pt} % Full-width bar
+        \rule{\linewidth}{0.4pt} % Full-width bar
+        \rule{\linewidth}{0.4pt} % Full-width bar
+        \rule{\linewidth}{0.4pt} % Full-width bar
+        \rule{\linewidth}{0.4pt} % Full-width bar
+        \rule{\linewidth}{0.4pt} % Full-width bar
+        \rule{\linewidth}{0.4pt} % Full-width bar
+
+        \item What does this code output?
+        \begin{lstlisting}
+i = 5  
+while i >= 1:  
+    j = 0  
+    while j < i:  
+        print(i, end='')  
+        j += 1  
+    print()  
+    i -= 1  
+        \end{lstlisting}
+        \rule{\linewidth}{0.4pt} % Full-width bar
+        \rule{\linewidth}{0.4pt} % Full-width bar
+        \rule{\linewidth}{0.4pt} % Full-width bar
+        \rule{\linewidth}{0.4pt} % Full-width bar
+        \rule{\linewidth}{0.4pt} % Full-width bar
+        \rule{\linewidth}{0.4pt} % Full-width bar
+        \rule{\linewidth}{0.4pt} % Full-width bar
+
+        \item What does this code output?
+        \begin{lstlisting}
+a = 0  
+b = 2  
+while b != 0:  
+    if a / b < 0.5:  # Short-circuit prevents division by zero  
+        print(f"{a}/{b}", end=' ')  
+    a += 1  
+    b -= 1  
+        \end{lstlisting}
+        \rule{\linewidth}{0.4pt} % Full-width bar
+        \rule{\linewidth}{0.4pt} % Full-width bar
+        \rule{\linewidth}{0.4pt} % Full-width bar
+        \rule{\linewidth}{0.4pt} % Full-width bar
+        \rule{\linewidth}{0.4pt} % Full-width bar
+        \rule{\linewidth}{0.4pt} % Full-width bar
+        \rule{\linewidth}{0.4pt} % Full-width bar
+
+        \item What does this code output?
+        \begin{lstlisting}
+rows = 3  
+i = 0  
+while i < rows:  
+    j = 0  
+    while j <= i:  
+        print(rows - i, end='')  
+        j += 1  
+    print()  
+    i += 1  
+        \end{lstlisting}
+        \rule{\linewidth}{0.4pt} % Full-width bar
+        \rule{\linewidth}{0.4pt} % Full-width bar
+        \rule{\linewidth}{0.4pt} % Full-width bar
+        \rule{\linewidth}{0.4pt} % Full-width bar
+        \rule{\linewidth}{0.4pt} % Full-width bar
+        \rule{\linewidth}{0.4pt} % Full-width bar
+        \rule{\linewidth}{0.4pt} % Full-width bar
+
+
+    \item What does this code output?
+    \begin{lstlisting}
+x = 3
+y = 0
+while x > 0 and y < 2:
+    x -= 1
+    y += 1
+    print(x, y)
+    \end{lstlisting}
+    \rule{\linewidth}{0.4pt} % Full-width bar
+    \rule{\linewidth}{0.4pt} % Full-width bar
+    \rule{\linewidth}{0.4pt} % Full-width bar
+
+    \item What does this code output?
+    \begin{lstlisting}
+a = 5
+b = 3
+while a > b:
+    print(a, b)
+    a -= 2
+    b += 1
+    if a <= b:
+        print("TERMINATE")
+    \end{lstlisting}
+    \rule{\linewidth}{0.4pt} % Full-width bar
+    \rule{\linewidth}{0.4pt} % Full-width bar
+    \rule{\linewidth}{0.4pt} % Full-width bar
+    \rule{\linewidth}{0.4pt} % Full-width bar
+
+    \item What does this code output?
+    \begin{lstlisting}
+p = 0
+q = 4
+while q > 0:
+    p = p + (q % 2)
+    print(p, end=' ')
+    q -= 1
+    \end{lstlisting}
+    \rule{\linewidth}{0.4pt} % Full-width bar
+    \rule{\linewidth}{0.4pt} % Full-width bar
+    \rule{\linewidth}{0.4pt} % Full-width bar
+
+    \item What does this code output?
+    \begin{lstlisting}
+m = 1
+n = 5
+while n > m:
+    if (n + m) % 3 == 0:
+        print(n, m)
+    n -= 2
+    m += 1
+    \end{lstlisting}
+    \rule{\linewidth}{0.4pt} % Full-width bar
+    \rule{\linewidth}{0.4pt} % Full-width bar
+    \rule{\linewidth}{0.4pt} % Full-width bar
+
+    \item Explain why the final print statement is unreachable:
+    \begin{lstlisting}
+r = 4
+s = 1
+while r > s:
+    print(r, s)
+    r -= 1
+    s += 1
+    if r == s:
+        print("MIDPOINT")
+print("FINAL")  # Why is this unreachable?
+    \end{lstlisting}
+    \rule{\linewidth}{0.4pt} % Full-width bar
+    \rule{\linewidth}{0.4pt} % Full-width bar
+    \rule{\linewidth}{0.4pt} % Full-width bar
+    \rule{\linewidth}{0.4pt} % Full-width bar
+    \item What is printed? Hint: Google "string subscripts in python"
+    \begin{lstlisting}
+s = "AbCdEf"
+i = 0
+res = ""
+while i < len(s):
+    if i % 2 == 0:
+        res += s[i].lower()
+    else:
+        res += s[i].upper()
+    i += 1
+print(res)
+    \end{lstlisting}
+    \rule{\linewidth}{0.4pt}
+    
+    \item What is printed?
+    \begin{lstlisting}
+text = "HELLO"
+i = 0
+output = ""
+while i < len(text):
+    if text[i].lower() in "aeiou":
+        output += '*'
+        break
+    else:
+        output += text[i].lower()
+    i += 1
+print(output)
+    \end{lstlisting}
+    \rule{\linewidth}{0.4pt}
+    
+    \item What is printed?
+    \begin{lstlisting}
+word = "c0d3ab0de"
+i = 0
+total = 0
+while i < len(word):
+    if word[i].isdigit():
+        total += int(word[i]) * (i if i % 2 == 0 else -i)
+    i += 1
+print(total)
+    \end{lstlisting}
+    \rule{\linewidth}{0.4pt}
+    
+    \item What is printed?
+    \begin{lstlisting}
+s = "a1b2c3d4"
+k = 0
+result = 0
+while k < len(s):
+    if s[k].isalpha():
+        result += ord(s[k].lower()) - 96
+    else:
+        result -= int(s[k])
+    k += 1
+print(result)
+    \end{lstlisting}
+    \rule{\linewidth}{0.4pt}
+    
+    \item What is printed?
+    \begin{lstlisting}
+text = "NaN"
+count = 0
+while text.lower() != "infinity":
+    print(text, end=" ")
+    count += 1
+    text = text[1:] + text[0]
+    if count >= 5:
+        break
+    \end{lstlisting}
+    \rule{\linewidth}{0.4pt}
+    
+    \item What is printed?
+    \begin{lstlisting}
+phrase = "LoOpS"
+i = 0
+output = ""
+while i < len(phrase):
+    if phrase[i].isupper():
+        output += phrase[i].lower()
+    elif phrase[i].islower():
+        output += str(i)
+    else:
+        output += '?'
+    i += 1
+print(output)
+    \end{lstlisting}
+    \rule{\linewidth}{0.4pt}
+    
+    \item What is printed?
+    \begin{lstlisting}
+s = "x3y2z1"
+i = 0
+res = ""
+while i < len(s):
+    if s[i].isalpha():
+        char = s[i].lower()
+        num = int(s[i+1])
+        res += char * num
+        i += 1  # Skip next digit
+    i += 1
+print(res)
+    \end{lstlisting}
+    \rule{\linewidth}{0.4pt}
+    
+    \item What is printed?
+    \begin{lstlisting}
+code = "A1B2C3"
+i = 0
+sum_val = 0
+while i < len(code):
+    if i % 2 == 0:  # Even index (0-indexed)
+        sum_val += ord(code[i].lower()) - 96
+    else:
+        sum_val -= int(code[i])
+    i += 1
+print(sum_val)
+    \end{lstlisting}
+    \rule{\linewidth}{0.4pt}
+    
+    \item What is printed?
+    \begin{lstlisting}
+text = "PYTHON"
+i = len(text) - 1
+output = ""
+while i >= 0:
+    if (len(text) - i) % 2 == 1:
+        output += text[i].lower()
+    else:
+        output += text[i]
+    i -= 1
+print(output)
+    \end{lstlisting}
+    \rule{\linewidth}{0.4pt}
+    
+    \item Why does this loop terminate and what is printed?
+    \begin{lstlisting}
+s = "TRUTH"
+count = 0
+while "false".upper() != "FALSE" or count < 2:
+    print(s[count % len(s)], end="")
+    count += 1
+    if count > len(s) * 2:
+        break
+    \end{lstlisting}
+    \rule{\linewidth}{0.4pt}
+\end{enumerate}
+\end{document}
+
